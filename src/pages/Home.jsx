@@ -12,6 +12,7 @@ export default function Home() {
   const { lid } = useParams();
 
   useEffect(() => {
+    window.scrollTo(0, 0);
     setUrl(`https://www.thecocktaildb.com/api/json/v1/1/search.php?f=${lid}`);
     if (cocktails && cocktails.drinks !== null) {
       setDrinks(cocktails.drinks);

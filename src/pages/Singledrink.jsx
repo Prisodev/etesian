@@ -7,18 +7,23 @@ import "./Singledrink.css";
 export default function Singledrink() {
   const [url, setUrl] = useState("");
   const [drink, setDrink] = useState("");
+  const [letter, setLetter] = useState(localStorage.letter);
   const [ingredients, setIngredients] = useState([]);
   const { data: cocktail, isPending, error } = useFetch(url, "GET");
   const { id } = useParams();
 
   useEffect(() => {
+    window.scrollTo(0, 0);
     setUrl(`https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=${id}`);
 
     if (cocktail && cocktail.drinks !== null) {
       setDrink(cocktail.drinks);
       setIngredients([]);
       for (var i = 1; i < 18; i++) {
-        if (cocktail.drinks[0]["strIngredient" + i] == null) {
+        if (
+          cocktail.drinks[0]["strIngredient" + i] == null ||
+          cocktail.drinks[0]["strIngredient" + i] === ""
+        ) {
           break;
         }
 
@@ -35,7 +40,7 @@ export default function Singledrink() {
 
   return (
     <div className='cocktail-single'>
-      <Link to={`/`}>
+      <Link to={`/${letter}`}>
         {isPending && <div>Loading...</div>}
         {error && <div>{error}</div>}
         <ul>
