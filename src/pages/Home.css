@@ -65,7 +65,7 @@ i {
 
 .cocktail-card .checked {
   position: relative;
-  top: -140px;
+  top: -150px;
   left: 96px;
   width: 15px;
   height: 15px;
@@ -85,7 +85,7 @@ i {
   }
 
   .cocktail-card .checked {
-    top: -137px;
+    top: -147px;
     left: 93px;
   }
 }
@@ -97,7 +97,7 @@ i {
   }
 
   .cocktail-card .checked {
-    top: -136px;
+    top: -146px;
     left: 92px;
   }
 }
@@ -108,7 +108,7 @@ i {
   }
 
   .cocktail-card .checked {
-    top: -134px;
+    top: -144px;
     left: 90px;
   }
 }
@@ -119,7 +119,7 @@ i {
   }
 
   .cocktail-card .checked {
-    top: -132px;
+    top: -142px;
     left: 88px;
   }
 }
@@ -130,7 +130,7 @@ i {
   }
 
   .cocktail-card .checked {
-    top: -130px;
+    top: -140px;
     left: 86px;
   }
 }
