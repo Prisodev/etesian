@@ -1,0 +1,136 @@
+.cocktail-list {
+  max-width: 400px;
+  margin: 85px auto;
+}
+
+.cocktail-list ul {
+  padding: 0;
+  margin-left: 2px;
+  margin-right: 2px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  row-gap: 5px
+}
+
+.cocktail-list a:link, a:visited, a:hover, a:active {
+  color: #000000;
+  text-decoration: none;
+}
+
+.cocktail-list li {
+  border: 1px solid #e4e4e4;
+  box-sizing: border-box;
+  padding: 10px;
+  box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.05);
+  border-radius: 4px;
+  list-style-type: none;
+  margin: 0px 0;
+  max-height: 150px;
+  overflow: hidden;
+  width: 126px
+}
+
+i {
+  border: 1px solid transparent;
+  box-sizing: border-box;
+  padding: 10px;
+  box-shadow: 4px 4px 6px transparent;
+  width: 126px
+}
+
+.cocktail-list button {
+  padding: 10px;
+  font-size: 16px;
+  flex-grow: 1;
+}
+
+.cocktail-card img {
+  width: 100%;
+}
+
+.cocktail-card h3 {
+
+  position: relative;
+  margin: auto;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  top: -3px;
+  height: 26px;
+  font-size: 70%;
+}
+
+.cocktail-card .checked {
+  position: relative;
+  top: -140px;
+  left: 96px;
+  width: 15px;
+  height: 15px;
+  background: green;
+  border-radius: 50%
+}
+
+.hidden {
+  display: block
+}
+
+
+@media (max-width: 410px) {
+  .cocktail-list li, i {
+    width: 123px;
+    max-height: 148px;
+  }
+
+  .cocktail-card .checked {
+    top: -137px;
+    left: 93px;
+  }
+}
+
+@media (max-width: 400px) {
+  .cocktail-list li, i {
+    width: 122px;
+    max-height: 147px;
+  }
+
+  .cocktail-card .checked {
+    top: -136px;
+    left: 92px;
+  }
+}
+
+@media (max-width: 390px) {
+  .cocktail-list li, i {
+    width: 120px;
+  }
+
+  .cocktail-card .checked {
+    top: -134px;
+    left: 90px;
+  }
+}
+
+@media (max-width: 380px) {
+  .cocktail-list li, i {
+    width: 118px;
+  }
+
+  .cocktail-card .checked {
+    top: -132px;
+    left: 88px;
+  }
+}
+
+@media (max-width: 370px) {
+  .cocktail-list li, i {
+    width: 116px;
+  }
+
+  .cocktail-card .checked {
+    top: -130px;
+    left: 86px;
+  }
+}
