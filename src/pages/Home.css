@@ -47,6 +47,15 @@ i {
 
 .cocktail-card img {
   width: 100%;
+  transition: all 1s ease-in-out
+}
+
+.cocktail-list li:hover img {
+  transform: scale(1.1);
+}
+
+.cocktail-list li:hover .cocktail-card .checked {
+  transform: translate(4px, -4px) scale(0);
 }
 
 .cocktail-card h3 {
@@ -70,7 +79,8 @@ i {
   width: 15px;
   height: 15px;
   background: green;
-  border-radius: 50%
+  border-radius: 50%;
+  transition: all 0.7s ease-in-out;
 }
 
 .hidden {
